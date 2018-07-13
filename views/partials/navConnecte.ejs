@@ -21,9 +21,11 @@
           <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/utilisateurs/logout">Se déconnecter</a>
           </li>  
+          <% if (session.type == "Particulier") { %>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/reservations/liste">Mon panier</a>
         </li>
+        <% } %>
         </ul>
       </div>
     </div>

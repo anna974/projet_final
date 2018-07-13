@@ -65,11 +65,12 @@
                                             </div>
 
                                             <% if (element.places_reservees < element.places_dispo) { %>
+                                                <% if session.type !== "Cuisinier") { %>
                                                 <div class="text-center mb-4">
                                                     <a class="btn text-light" id="set" href="/reservations/valider/<%=element.id%>">Réserver</a>
                                                 </div>
 
-                                                <% } %>
+                                                <% }} %>
 
 
 

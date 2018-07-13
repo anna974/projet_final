@@ -39,15 +39,15 @@
                                                 <h4 class="card-title color-orange">
                                                     Atelier de
                                                     <%= element.titre%>
-                                                        <small>Le
-                                                            <%= (new Date(element.date)).getDate() %> /
-                                                                <%= (new Date(element.date)).getMonth()+1 %> /
-                                                                    <%= new Date(element.date).getFullYear() %> à
-                                                                        <%= element.horaire_debut %>
+                                                        <small><%= element.contenu%>
                                                         </small>
                                                 </h4>
                                                 <p class="card-text">
-                                                    <%= element.contenu%>
+                                                        Le
+                                                        <%= (new Date(element.date)).getDate() %> /
+                                                            <%= (new Date(element.date)).getMonth()+1 %> /
+                                                                <%= new Date(element.date).getFullYear() %> à
+                                                                    <%= element.horaire_debut %>
                                                 </p>
 
                                                 <p class="card-text">
